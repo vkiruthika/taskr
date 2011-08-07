@@ -1,0 +1,187 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../app/stylesheets/_tasks.sass */
+.bucket {
+  margin-top: 10px;
+}
+/* line 3, ../../app/stylesheets/_tasks.sass */
+.bucket h3 {
+  font-size: 20px;
+}
+/* line 5, ../../app/stylesheets/_tasks.sass */
+.bucket p {
+  font-size: smaller;
+  color: #777777;
+}
+
+/* line 8, ../../app/stylesheets/_tasks.sass */
+#tasks {
+  margin: 10px 0;
+}
+
+/* line 17, ../../app/stylesheets/screen.sass */
+body {
+  font-family: san-serif;
+  background-color: #c9b675;
+}
+/* line 20, ../../app/stylesheets/screen.sass */
+body a {
+  color: #4062bd;
+}
+
+/* line 23, ../../app/stylesheets/screen.sass */
+#container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 26, ../../app/stylesheets/screen.sass */
+#container #header {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  margin: 5px 0;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #header {
+  overflow-x: hidden;
+}
+/* line 29, ../../app/stylesheets/screen.sass */
+#container h1 {
+  font-size: 32px;
+  color: #01113b;
+}
+/* line 33, ../../app/stylesheets/screen.sass */
+#container .login_information {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 390px;
+  float: right;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container .login_information {
+  overflow-x: hidden;
+}
+/* line 37, ../../app/stylesheets/screen.sass */
+#container ul#nav {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  border-bottom: 3px solid #583100;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container ul#nav {
+  overflow-x: hidden;
+}
+/* line 40, ../../app/stylesheets/screen.sass */
+#container ul#nav li {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 15px;
+}
+/* line 44, ../../app/stylesheets/screen.sass */
+#container ul#nav li a {
+  text-decoration: none;
+}
+/* line 46, ../../app/stylesheets/screen.sass */
+#container ul#nav li.selected {
+  background-color: #583100;
+}
+/* line 48, ../../app/stylesheets/screen.sass */
+#container ul#nav li.selected a {
+  color: white;
+}
+/* line 51, ../../app/stylesheets/screen.sass */
+#container #content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  min-height: 500px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #content {
+  overflow-x: hidden;
+}
+/* line 55, ../../app/stylesheets/screen.sass */
+#container #footer {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290@railspundit/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #container #footer {
+  overflow-x: hidden;
+}

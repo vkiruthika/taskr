@@ -1,0 +1,56 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import blueprint
+@import blueprint/grid
+@import tasks
+
+$dark_blue: #01113B
+$light_blue: #4062BD
+$cream: #C9B675
+$white: #fff
+$brown: #583100
+
+body
+  font-family: san-serif
+  background-color: $cream
+  a
+    color: $light_blue
+
+#container
+  +container
+  
+  #header
+    +column(24)
+    margin: 5px 0
+  h1
+    font-size: 32px
+    color: $dark_blue
+  
+  .login_information
+    +column(10)
+    float: right  
+    
+  ul#nav
+    +column(24)
+    border-bottom: 3px solid $brown
+    li
+      display: inline-block
+      margin-right: 5px
+      padding: 15px
+      a
+        text-decoration: none
+    li.selected
+      background-color: $brown
+      a
+        color: $white
+    
+  #content
+    +column(24)
+    min-height: 500px
+    
+  #footer
+    +column(24)

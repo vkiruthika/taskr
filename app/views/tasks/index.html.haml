@@ -1,0 +1,30 @@
+- if @bucket
+  .bucket
+    %h3.bucket_name= @bucket.name
+    %p= @bucket.description
+%ul#tasks
+  -@tasks.each do |t|
+    -unless t.new_record?
+      %li
+        -if t.done
+          [done]
+        =t.title
+        -unless t.done
+          =link_to 'complete', complete_task_path(t), :confirm=>'Are you sure?', :method=>'post'
+- if @bucket
+  =semantic_form_for [@bucket,@task] do |f|
+    %fieldset
+      %ol
+        =f.input :title
+        =f.input :bucket_id, :as => :hidden
+    =f.buttons
+    
+  %h3 Share this Bucket  
+  = form_tag share_bucket_path(@bucket) do
+    = label_tag 'Email'
+    = email_field_tag 'share[email]'
+    %br  
+    = label_tag 'Name'
+    = text_field_tag 'share[name]'
+    %br
+    = submit_tag "Submit"  

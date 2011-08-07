@@ -1,0 +1,4 @@
+%ul.buckets
+  - @buckets.each do |bucket|
+    %li= link_to bucket.name, bucket_tasks_path(bucket)
+=link_to 'New Bucket', new_bucket_path

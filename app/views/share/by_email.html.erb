@@ -1,0 +1,9 @@
+Hi <%=@name%>,
+
+you have a new list shared by <%=@bucket.user.email%>. Here are the items in that list.
+<ul>
+<%=@bucket.tasks.each do |t| %>
+<li><%=t.title%></li>
+<% end %>
+</ul>
+Have Fun.
